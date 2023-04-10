@@ -5,12 +5,12 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Header from './components/Header';
 import Home from './components/Home';
 import Statistics from './components/Statistics';
 import AppliedJobs from './components/AppliedJobs';
 import Blog from './components/Blog';
 import HomePage from './components/HomePage';
+import JobCategories from './components/JobCategories';
 
 const router = createBrowserRouter([
   {
@@ -19,8 +19,15 @@ const router = createBrowserRouter([
     children:[
       {
         path:"/",
-        element: <HomePage></HomePage>
+        element: <HomePage></HomePage>,
+        loader: ()=>fetch('job-category.json'),
       },
+      {
+        path:"/",
+        element: <JobCategories></JobCategories>,
+        loader: ()=>fetch('job-category.json'),
+      },
+
       {
         path:"/statistics",
         element: <Statistics></Statistics>,
