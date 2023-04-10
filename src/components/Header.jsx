@@ -6,7 +6,6 @@ import {
 } from '@heroicons/react/24/solid'
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false)
   return (
     <div>
       <div className="flex items-center justify-between my-container">
