@@ -7,13 +7,14 @@ import Statistics from "./components/Statistics";
 import AppliedJobs from "./components/AppliedJobs";
 import Blog from "./components/Blog";
 import HomePage from "./components/HomePage";
-import FeaturedJobs from "./components/FeaturedJobs";
 import JobsDetail from "./components/JobsDetail";
+import ErrorPage from "./components/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home></Home>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
