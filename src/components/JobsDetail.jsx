@@ -1,11 +1,19 @@
 import React from "react";
 import { Link, useLoaderData, useParams } from "react-router-dom";
+import { addToDb, getjobCart } from "../utilities/fakedb";
 
 const JobsDetail = () => {
+  //all jobs load and match by ID
   const jobs = useLoaderData();
   const { jobId } = useParams();
   const matchJobArray = jobs.filter((job) => job.id == jobId);
   const matchJob = matchJobArray[0];
+
+  //click apply btn then save localStore
+  const jobSaveDb=(applyId)=>{
+    addToDb(applyId)
+  }
+
   return (
     <>
       <div className="my-container">
@@ -51,7 +59,7 @@ const JobsDetail = () => {
             <p className="mb-4 font-bold text-lg">Email : <span className="font-medium">{matchJob.mail}</span></p>
             <p className="mb-4 font-bold text-lg">Address : <span className="font-medium">{matchJob.location}</span></p>
           </div>
-          <Link to={`/applied-jobs/${matchJob.id}`}><button className="my-btn w-full py-4 font-extrabold text-lg">Apply Now</button></Link>
+          <button className="my-btn w-full py-4 font-extrabold text-lg" onClick={()=>jobSaveDb(matchJob.id)}>Apply Now</button>
           </div>
         </div>
       </div>
