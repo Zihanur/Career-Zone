@@ -27,7 +27,7 @@ const Feature = ({ feature }) => {
             Salary: {feature.salary}
           </p>
         </div>
-        <Link to={`./jobdetail/${feature.id}`}><button className="my-btn py-2 px-3 font-medium text-xl">View Details</button></Link>
+        <Link to={`/jobdetail/${feature.id}`}><button className="my-btn py-2 px-3 font-medium text-xl">View Details</button></Link>
       </div>
     </>
   );

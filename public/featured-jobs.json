@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "1",
     "logo": "./Logo/google-1-1 1.png",
     "jobTitle": "Technical Database Engineer",
     "companyName": "Google LLC",
@@ -15,7 +15,7 @@
     "experiences": "2-3"
   },
   {
-    "id": 2,
+    "id": "2",
     "logo": "./Logo/netflix-4 1.png",
     "jobTitle": "Senior Product Designer",
     "companyName": "Netflix",
@@ -30,7 +30,7 @@
     "experiences": "4-5"
   },
   {
-    "id": 3,
+    "id": "3",
     "logo": "./Logo/tesla-9 1.png",
     "jobTitle": "Software Engineer",
     "companyName": "Tesla",
@@ -45,7 +45,7 @@
     "experiences": "1-2"
   },
   {
-    "id": 4,
+    "id": "4",
     "logo": "./Logo/google-1-1 1.png",
     "jobTitle": "Software Engineer",
     "companyName": "Google",
@@ -60,7 +60,7 @@
     "experiences": "5-6"
   },
   {
-    "id": 5,
+    "id": "5",
     "logo": "./Logo/netflix-4 1.png",
     "jobTitle": "Software Engineer",
     "companyName": "Netflix",
@@ -75,7 +75,7 @@
     "experiences": "1-3"
   },
   {
-    "id": 6,
+    "id": "6",
     "logo": "./Logo/tesla-9 1.png",
     "jobTitle": "Database Engineer",
     "companyName": "Tesla",
