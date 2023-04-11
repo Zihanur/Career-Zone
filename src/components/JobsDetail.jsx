@@ -1,12 +1,11 @@
 import React from "react";
-import { useLoaderData, useParams } from "react-router-dom";
+import { Link, useLoaderData, useParams } from "react-router-dom";
 
 const JobsDetail = () => {
   const jobs = useLoaderData();
   const { jobId } = useParams();
   const matchJobArray = jobs.filter((job) => job.id == jobId);
   const matchJob = matchJobArray[0];
-  console.log(matchJob);
   return (
     <>
       <div className="my-container">
@@ -52,7 +51,7 @@ const JobsDetail = () => {
             <p className="mb-4 font-bold text-lg">Email : <span className="font-medium">{matchJob.mail}</span></p>
             <p className="mb-4 font-bold text-lg">Address : <span className="font-medium">{matchJob.location}</span></p>
           </div>
-          <button className="my-btn w-full py-4 font-extrabold text-lg">Apply Now</button>
+          <Link to={`/applied-jobs/${matchJob.id}`}><button className="my-btn w-full py-4 font-extrabold text-lg">Apply Now</button></Link>
           </div>
         </div>
       </div>
