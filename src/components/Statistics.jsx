@@ -3,7 +3,10 @@ import React from 'react';
 const Statistics = () => {
   return (
     <div>
-      <h1>statistics cooming soon.....</h1>
+      <div className='my-container'>
+        <h1>Statistics comming soon</h1>
+        
+      </div>
     </div>
   );
 };

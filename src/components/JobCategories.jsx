@@ -15,7 +15,7 @@ const JobCategories = () => {
           need. Its your future
         </p>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-5 lg:gap-6">
-          {jobCategories.map((category) => (
+          {jobCategories?.map((category) => (
             <Category key={category.id} category={category}></Category>
           ))}
         </div>
