@@ -24,11 +24,19 @@ const Feature = ({ feature }) => {
         </div>
         <div className="flex items-center gap-4 mb-5">
           <p className="font-semibold	text-xl text-gray-500 flex gap-1">
-            <img src={"../../public/Icons/Frame-4.png"} alt="" />
+            <img
+              className="h-6 w-6"
+              src={"../../public/Icons/Frame-4.png"}
+              alt=""
+            />
             {feature.location}
           </p>
           <div className="font-semibold	text-xl text-gray-500 flex gap-1">
-            <img src={"../../public/Icons/Frame.png"} alt="" />
+            <img
+              className="h-6 w-6"
+              src={"../../public/Icons/Frame.png"}
+              alt=""
+            />
             <p>Salary: {feature.salary}</p>
           </div>
         </div>

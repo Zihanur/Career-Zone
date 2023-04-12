@@ -7,7 +7,7 @@ import {
 
 const Header = () => {
   return (
-    <div>
+    <>
       <div className="flex items-center justify-between my-container">
         <div className="font-extrabold text-3xl my-11">
           <Link to={"/"}>Career Zone</Link>
@@ -50,7 +50,7 @@ const Header = () => {
           Star Applying
         </button>
       </div>
-    </div>
+    </>
   );
 };
 

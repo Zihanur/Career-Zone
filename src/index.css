@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .my-container{
-  @apply mx-8 md:mx-16 lg:mx-48
+  @apply mx-8 md:mx-16 lg:mx-32 xl:mx-48
 }
 
 .my-btn{
