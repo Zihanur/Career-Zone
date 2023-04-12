@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useLoaderData, useParams } from "react-router-dom";
 import { addToDb, getjobCart } from "../utilities/fakedb";
 
 const JobsDetail = () => {
   //all jobs load and match by ID
+  const [matchJob, setMatchJobs] = useState();
   const jobs = useLoaderData();
   const { jobId } = useParams();
-  const matchJobArray = jobs.filter((job) => job.id == jobId);
-  const matchJob = matchJobArray[0];
+  useEffect(() => {
+    const matchJobArray = jobs.find((job) => job.id === jobId);
+    setMatchJobs(matchJobArray);
+  }, []);
 
   //click apply btn then save localStore
   const jobSaveDb = (applyId) => {
@@ -25,25 +28,25 @@ const JobsDetail = () => {
             <p className="font-extrabold mb-6">
               Description:{" "}
               <span className="font-medium text-gray-500">
-                {matchJob.description}
+                {matchJob?.description}
               </span>
             </p>
             <p className="font-extrabold mb-6">
               Responsibility:{" "}
               <span className="font-medium text-gray-500">
-                {matchJob.responsibility}
+                {matchJob?.responsibility}
               </span>
             </p>
             <p className="font-extrabold mb-6">
               Educational Requirements: <br /> <br />
               <span className="font-medium text-gray-500">
-                {matchJob.requirements}
+                {matchJob?.requirements}
               </span>
             </p>
             <p className="font-extrabold mb-6">
               Experiences: <br /> <br />
               <span className="font-medium text-gray-500">
-                {matchJob.experiences} Years in this field.
+                {matchJob?.experiences} Years in this field.
               </span>
             </p>
           </div>
@@ -60,7 +63,7 @@ const JobsDetail = () => {
                 <p>
                   Salary :{" "}
                   <span className="font-medium">
-                    {matchJob.salary} (Per Month)
+                    {matchJob?.salary} (Per Month)
                   </span>
                 </p>
               </div>
@@ -72,7 +75,7 @@ const JobsDetail = () => {
                 />
                 <p>
                   Job Title :{" "}
-                  <span className="font-medium">{matchJob.jobTitle}</span>
+                  <span className="font-medium">{matchJob?.jobTitle}</span>
                 </p>
               </div>
               <h3 className="font-extrabold text-xl mb-6">
@@ -86,7 +89,7 @@ const JobsDetail = () => {
                   alt=""
                 />
                 <p>
-                  Phone : <span className="font-medium">{matchJob.phone}</span>
+                  Phone : <span className="font-medium">{matchJob?.phone}</span>
                 </p>
               </div>
               <div className="mb-4 font-bold text-lg flex gap-1">
@@ -96,7 +99,7 @@ const JobsDetail = () => {
                   alt=""
                 />
                 <p>
-                  Email : <span className="font-medium">{matchJob.mail}</span>
+                  Email : <span className="font-medium">{matchJob?.mail}</span>
                 </p>
               </div>
               <div className="mb-4 font-bold text-lg flex gap-1">
@@ -107,13 +110,13 @@ const JobsDetail = () => {
                 />
                 <p>
                   Address :{" "}
-                  <span className="font-medium">{matchJob.location}</span>
+                  <span className="font-medium">{matchJob?.location}</span>
                 </p>
               </div>
             </div>
             <button
               className="my-btn w-full py-4 font-extrabold text-lg"
-              onClick={() => jobSaveDb(matchJob.id)}
+              onClick={() => jobSaveDb(matchJob?.id)}
             >
               Apply Now
             </button>

@@ -6,34 +6,32 @@ const Blog = () => {
       <div>
         <h2 className="font-bold text-xl">When should you use Context API?</h2>
         <p className="text-lg">
-          When you have data that needs to be shared across multiple components.
-          If you find yourself passing props down through several levels of the
-          component tree, Context API can help simplify your code and reduce the
-          amount of boilerplate.When you have global settings or configuration
-          that needs to be available throughout the app. For example, you might
-          use Context API to provide a theme object that contains styles and
-          colors that can be used throughout the app. When you have user
+          When we have data that needs to be shared multiple components. Then If
+          we find ourself passing props down through several levels of the
+          component tree, Context API can help simplify our code and reduce the
+          amount of boilerplate.When i have global settings or configuration
+          that needs to be available throughout the app. When i have user
           authentication data that needs to be available to multiple components.
           Context API can help you manage user authentication state and make it
           easy to check whether a user is logged in or not.
         </p>
       </div>
-      <hr className="border border-gray-200"/>
+      <hr className="border border-gray-200" />
       <div>
         <h2 className="font-bold text-xl">What is custom Hooks?</h2>
         <p className="text-lg">
-          Custom Hooks is a feature in React.js that allows you to create
-          reusable logic that can be shared across multiple components. Custom
-          Hooks are JavaScript functions that start with the word "use" and can
-          use built-in React hooks, such as useState, useEffect, useContext, and
-          others. With Custom Hooks, you can extract common functionality that
-          you use in your components and encapsulate it in a reusable hook. This
-          makes your code more modular, easier to read, and less repetitive.
-          Custom Hooks can also help you avoid code duplication and reduce the
-          amount of boilerplate code in your application.
+          Custom Hooks is a feature of React.js that allows to create reusable
+          logic that can be shared across multiple components. Custom Hooks are
+          JavaScript functions that start with the word "use" and can use
+          built-in React hooks, such as useState, useEffect, useContext, and
+          others. With Custom Hooks, i can extract common functionality that we
+          use in your components. This makes our code more modular, easier to
+          read, and less repetitive. Custom Hooks can also help avoid code
+          duplication and reduce the amount of boilerplate code in our
+          application.
         </p>
       </div>
-      <hr className="border border-gray-200"/>
+      <hr className="border border-gray-200" />
       <div>
         <h2 className="font-bold text-xl">What is useRef?</h2>
         <p className="text-lg">
@@ -44,7 +42,7 @@ const Blog = () => {
           directly.
         </p>
       </div>
-      <hr className="border border-gray-200"/>
+      <hr className="border border-gray-200" />
       <div>
         <h2 className="font-bold text-xl">What is useMemo?</h2>
         <p className="text-lg">

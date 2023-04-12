@@ -3,7 +3,7 @@ import Feature from "./Feature";
 
 const FeaturedJobs = () => {
   const [features, setFeatures] = useState([]);
-  const [showMore,setShowMore] = useState(false);
+  const [showMore, setShowMore] = useState(false);
   useEffect(() => {
     fetch("featured-jobs.json")
       .then((res) => res.json())
@@ -21,12 +21,25 @@ const FeaturedJobs = () => {
         </p>
       </div>
       <div className="my-container grid grid-cols-1 md:grid-cols-2 md:gap-5 gap-y-5">
-        {features.slice(0, 4).map((feature) => (
-          <Feature key={feature.id} feature={feature}></Feature>
-        ))}
+        {showMore
+          ? features.map((feature) => (
+              <Feature key={feature.id} feature={feature}></Feature>
+            ))
+          : features
+              .slice(0, 4)
+              .map((feature) => (
+                <Feature key={feature.id} feature={feature}></Feature>
+              ))}
       </div>
       <div className="my-container text-center my-8">
-        <button className="my-btn py-3 px-4 text-2xl" onClick={()=>setShowMore(!showMore)}>Show More</button>
+        {!showMore && (
+          <button
+            className="my-btn py-3 px-4 text-2xl"
+            onClick={() => setShowMore(!showMore)}
+          >
+            Show More
+          </button>
+        )}
       </div>
     </>
   );
