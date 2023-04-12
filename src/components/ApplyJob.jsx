@@ -27,7 +27,7 @@ const ApplyJob = ({ jb }) => {
               <div className="flex gap-1">
                 <img
                   className="h-6 w-6"
-                  src={"../../public/Icons/Frame-4.png"}
+                  src={"https://i.ibb.co/bRkL53b/Frame-4.png"}
                   alt=""
                 />
                 {location}
@@ -35,7 +35,7 @@ const ApplyJob = ({ jb }) => {
               <div className="flex gap-1">
                 <img
                   className="h-6 w-6"
-                  src={"../../public/Icons/Frame.png"}
+                  src={"https://i.ibb.co/8cWSgJP/Frame.png"}
                   alt=""
                 />
                 <p>Salary: {salary}</p>

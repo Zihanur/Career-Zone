@@ -22,7 +22,7 @@ const HomePage = () => {
         <div className="flex items-center justify-center">
           <img
             className="object-fit: cover"
-            src={"/public/All Images/cover.png"}
+            src={"https://i.ibb.co/2gchhRw/cover.png"}
             alt=""
           />
         </div>

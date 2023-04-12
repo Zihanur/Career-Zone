@@ -5,7 +5,7 @@ import { useLoaderData } from "react-router-dom";
 
 const AppliedJobs = () => {
   const jobs = useLoaderData();
-  
+
   //get localstore data
   const applyJobDb = getjobCart();
   const applyJoblist = [];
@@ -29,7 +29,9 @@ const AppliedJobs = () => {
           </button>
         </div>
         <div className="flex flex-col gap-y-6">
-          {applyJoblist.map((jb) =><ApplyJob key={jb.id} jb={jb}></ApplyJob>)}
+          {applyJoblist.map((jb) => (
+            <ApplyJob key={jb.id} jb={jb}></ApplyJob>
+          ))}
         </div>
       </div>
     </div>

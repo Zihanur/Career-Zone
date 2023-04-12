@@ -26,7 +26,7 @@ const Feature = ({ feature }) => {
           <p className="font-semibold	text-xl text-gray-500 flex gap-1">
             <img
               className="h-6 w-6"
-              src={"../../public/Icons/Frame-4.png"}
+              src={"https://i.ibb.co/bRkL53b/Frame-4.png"}
               alt=""
             />
             {feature.location}
@@ -34,7 +34,7 @@ const Feature = ({ feature }) => {
           <div className="font-semibold	text-xl text-gray-500 flex gap-1">
             <img
               className="h-6 w-6"
-              src={"../../public/Icons/Frame.png"}
+              src={"https://i.ibb.co/8cWSgJP/Frame.png"}
               alt=""
             />
             <p>Salary: {feature.salary}</p>

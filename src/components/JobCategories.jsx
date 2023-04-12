@@ -5,7 +5,9 @@ import Category from "./Category";
 const JobCategories = () => {
   const [jobCategories,setJobCategories] = useState([]);
   useEffect(()=>{
-    fetch('../../public/job-category.json').then(res=>res.json()).then(data=>setJobCategories(data))
+    fetch('/job-category.json')
+    .then(res=>res.json())
+    .then(data=>setJobCategories(data))
   },[])
 
   return (

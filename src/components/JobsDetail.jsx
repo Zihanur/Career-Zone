@@ -57,7 +57,7 @@ const JobsDetail = () => {
               <div className="mb-4 font-bold text-lg flex gap-1">
                 <img
                   className="h-6 w-6"
-                  src={"../../public/Icons/Frame.png"}
+                  src={"https://i.ibb.co/8cWSgJP/Frame.png"}
                   alt=""
                 />
                 <p>
@@ -70,7 +70,7 @@ const JobsDetail = () => {
               <div className="mb-4 font-bold text-lg flex gap-1">
                 <img
                   className="h-6 w-6"
-                  src={"../../public/Icons/Frame-1.png"}
+                  src={"https://i.ibb.co/gdwxMkB/Frame-1.png"}
                   alt=""
                 />
                 <p>
@@ -85,7 +85,7 @@ const JobsDetail = () => {
               <div className="mb-4 font-bold text-lg flex gap-1">
                 <img
                   className="h-6 w-6"
-                  src={"../../public/Icons/Frame-2.png"}
+                  src={"https://i.ibb.co/n7tkz5q/Frame-2.png"}
                   alt=""
                 />
                 <p>
@@ -95,7 +95,7 @@ const JobsDetail = () => {
               <div className="mb-4 font-bold text-lg flex gap-1">
                 <img
                   className="h-6 w-6"
-                  src={"../../public/Icons/Frame-3.png"}
+                  src={"https://i.ibb.co/dJLxZsV/Frame-3.png"}
                   alt=""
                 />
                 <p>
@@ -105,7 +105,7 @@ const JobsDetail = () => {
               <div className="mb-4 font-bold text-lg flex gap-1">
                 <img
                   className="h-6 w-6"
-                  src={"../../public/Icons/Frame-4.png"}
+                  src={"https://i.ibb.co/bRkL53b/Frame-4.png"}
                   alt=""
                 />
                 <p>
