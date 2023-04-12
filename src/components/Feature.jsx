@@ -13,21 +13,30 @@ const Feature = ({ feature }) => {
           {feature.companyName}
         </p>
         <div className="flex gap-3">
-          {feature.status.map((st,index) => (
-            <p className="text-blue-500 font-bold px-2.5 py-1.5 rounded-md border border-blue-500 mb-4"  key={index}>
+          {feature.status.map((st, index) => (
+            <p
+              className="text-blue-500 font-bold px-2.5 py-1.5 rounded-md border border-blue-500 mb-4"
+              key={index}
+            >
               {st}
             </p>
           ))}
         </div>
         <div className="flex items-center gap-4 mb-5">
-          <p className="font-semibold	text-xl text-gray-500">
+          <p className="font-semibold	text-xl text-gray-500 flex gap-1">
+            <img src={"../../public/Icons/Frame-4.png"} alt="" />
             {feature.location}
           </p>
-          <p className="font-semibold	text-xl text-gray-500">
-            Salary: {feature.salary}
-          </p>
+          <div className="font-semibold	text-xl text-gray-500 flex gap-1">
+            <img src={"../../public/Icons/Frame.png"} alt="" />
+            <p>Salary: {feature.salary}</p>
+          </div>
         </div>
-        <Link to={`/jobdetail/${feature.id}`}><button className="my-btn py-2 px-3 font-medium text-xl">View Details</button></Link>
+        <Link to={`/jobdetail/${feature.id}`}>
+          <button className="my-btn py-2 px-3 font-medium text-xl">
+            View Details
+          </button>
+        </Link>
       </div>
     </>
   );

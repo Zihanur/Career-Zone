@@ -51,30 +51,65 @@ const JobsDetail = () => {
             <div className="p-7 bg-gray-100 rounded-md">
               <h3 className="font-extrabold text-xl mb-6">Job Details</h3>
               <hr className="mb-6 border border-gray-300" />
-              <p className="mb-4 font-bold text-lg">
-                Salary :{" "}
-                <span className="font-medium">
-                  {matchJob.salary} (Per Month)
-                </span>
-              </p>
-              <p className="mb-4 font-bold text-lg">
-                Job Title :{" "}
-                <span className="font-medium">{matchJob.jobTitle}</span>
-              </p>
+              <div className="mb-4 font-bold text-lg flex gap-1">
+                <img
+                  className="h-6 w-6"
+                  src={"../../public/Icons/Frame.png"}
+                  alt=""
+                />
+                <p>
+                  Salary :{" "}
+                  <span className="font-medium">
+                    {matchJob.salary} (Per Month)
+                  </span>
+                </p>
+              </div>
+              <div className="mb-4 font-bold text-lg flex gap-1">
+                <img
+                  className="h-6 w-6"
+                  src={"../../public/Icons/Frame-1.png"}
+                  alt=""
+                />
+                <p>
+                  Job Title :{" "}
+                  <span className="font-medium">{matchJob.jobTitle}</span>
+                </p>
+              </div>
               <h3 className="font-extrabold text-xl mb-6">
                 Contact Information
               </h3>
               <hr className="mb-6 border border-gray-300" />
-              <p className="mb-4 font-bold text-lg">
-                Phone : <span className="font-medium">{matchJob.phone}</span>
-              </p>
-              <p className="mb-4 font-bold text-lg">
-                Email : <span className="font-medium">{matchJob.mail}</span>
-              </p>
-              <p className="mb-4 font-bold text-lg">
-                Address :{" "}
-                <span className="font-medium">{matchJob.location}</span>
-              </p>
+              <div className="mb-4 font-bold text-lg flex gap-1">
+                <img
+                  className="h-6 w-6"
+                  src={"../../public/Icons/Frame-2.png"}
+                  alt=""
+                />
+                <p>
+                  Phone : <span className="font-medium">{matchJob.phone}</span>
+                </p>
+              </div>
+              <div className="mb-4 font-bold text-lg flex gap-1">
+                <img
+                  className="h-6 w-6"
+                  src={"../../public/Icons/Frame-3.png"}
+                  alt=""
+                />
+                <p>
+                  Email : <span className="font-medium">{matchJob.mail}</span>
+                </p>
+              </div>
+              <div className="mb-4 font-bold text-lg flex gap-1">
+                <img
+                  className="h-6 w-6"
+                  src={"../../public/Icons/Frame-4.png"}
+                  alt=""
+                />
+                <p>
+                  Address :{" "}
+                  <span className="font-medium">{matchJob.location}</span>
+                </p>
+              </div>
             </div>
             <button
               className="my-btn w-full py-4 font-extrabold text-lg"

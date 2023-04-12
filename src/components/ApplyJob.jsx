@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ArrowLeftOnRectangleIcon } from "@heroicons/react/24/solid";
 
 const ApplyJob = ({ jb }) => {
   const { id, logo, jobTitle, companyName, status, location, salary } = jb;
@@ -26,10 +25,21 @@ const ApplyJob = ({ jb }) => {
             </div>
             <div className="flex gap-4 font-lg text-xl text-gray-400">
               <div className="flex gap-1">
-                <ArrowLeftOnRectangleIcon className="h-6 w-6 text-blue-500" />
+                <img
+                  className="h-6 w-6"
+                  src={"../../public/Icons/Frame-4.png"}
+                  alt=""
+                />
                 {location}
               </div>
-              <p>Salary: {salary}</p>
+              <div className="flex gap-1">
+                <img
+                  className="h-6 w-6"
+                  src={"../../public/Icons/Frame.png"}
+                  alt=""
+                />
+                <p>Salary: {salary}</p>
+              </div>
             </div>
           </div>
           <div>
